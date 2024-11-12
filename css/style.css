@@ -5,28 +5,25 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(46, 47, 66, 1);
+  line-height: calc(24 / 16);
+    letter-spacing: 0.02em;
 }
 
-/* .container {
-  padding: 0 156px;
-  margin-left: auto;
-  margin-right: auto;
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
 }
+
 
 .hover-item:hover {
   color: #404bbf;
   transition-duration: 250ms;
-} 
- 
-/* header */
-@media screen and (max-width: 767px) {
-  .menu-header {
-    display: none;
-  }
-  .contact-info {
-    display: none;
-  }
 }
+
+/* header */
 
 .header-position {
     display: flex;
@@ -36,83 +33,31 @@
     padding-bottom: 24px;
 }
 
-
 .menu-button {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    height: 22px;
-}
-
-.logo {
-    color: #4d5ae5;
-    font-family: "Raleway";
-    font-size: 18px;
-    font-weight: 800;
-  }
-  
-  .logo > span {
-    color: #2e2f42;
-    font-family: "Raleway";
-    font-size: 18px;
-    font-weight: 800;
-  }
-
-  .header-link {
-    color: #2e2f42;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
-  .mail {
-    color: #434455;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  .number {
-    color: #434455;
-    font-size: 16px;
-    font-weight: 400;
-  } 
-  .mobile-menu {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 1);
-  }
-
-  .mobile-menu-close-btn {
-    /* background-color: transparent; */
-    border: none;
-    padding: 0;
-    height: 8px;
-  }
-/* .header-position {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-list {
-  display: flex;
-  gap: 40px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  height: 22px;
 }
 
 .logo {
   color: #4d5ae5;
   font-family: "Raleway";
-  font-size: 18px;
   font-weight: 800;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .logo > span {
   color: #2e2f42;
   font-family: "Raleway";
-  font-size: 18px;
   font-weight: 800;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .header-link {
@@ -130,28 +75,123 @@
   color: #434455;
   font-size: 16px;
   font-weight: 400;
-}   */
-
-.container {
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 428px;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 429px) {
+  .navigation-menu {
+    display: none;
   }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
+  .contact-info {
+    display: none;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1128px;
+@media screen and (min-width: 430px) {
+  .menu-header {
+    display: flex;
+    gap: 40px;
+  }
+  .menu-button {
+    display: none;
   }
 }
+
+
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.mobile-menu-container {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.mobile-menu-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+.mb-mn-item {
+padding-bottom: 40px;
+}
+.mb-mn-link {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.ct-info-menu {
+padding-top: 284px;
+}
+
+.ct-item-menu {
+  padding-bottom: 40px;
+}
+
+.number-menu {
+  font-weight: 700;
+  font-size: 36px;
+}
+.mail-menu {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.media-burger-menu {
+  display: flex;
+  gap: 56px;
+}
+
+.media-burger-link {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(77, 90, 229, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition-duration: 250ms;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
