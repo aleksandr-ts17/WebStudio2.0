@@ -119,6 +119,17 @@
     flex-direction: column;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .position-menu-head {
+    gap: 76px;
+    padding-right: 332px;
+  }
+  .contact-info {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
 /*------------------------- hero -----------------------------------*/
 
 .hero {
@@ -129,12 +140,10 @@
     ),
     url(/images/people-office\ 1.jpg);
   background-position: center;
+  background-size: color;
 }
 
-.hero-title {
-  display: flex;
-}
-
+/*-------------------------------- about-------------------------------- */
 .mobile-menu {
   position: fixed;
   width: 100%;
