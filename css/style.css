@@ -9,28 +9,43 @@
   font-size: 16px;
   color: rgba(46, 47, 66, 1);
   line-height: calc(24 / 16);
-    letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 }
 
 .container {
+  min-width: 320px;
+  max-width: 428px;
   padding-left: 16px;
   padding-right: 16px;
+  margin-left: auto;
+  margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+}
 
 .hover-item:hover {
   color: #404bbf;
   transition-duration: 250ms;
 }
 
-/* header */
+/*------------------------------- header ------------------------*/
 
 .header-position {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-button {
@@ -76,18 +91,35 @@
   font-size: 16px;
   font-weight: 400;
 }
-
-@media screen and (max-width: 428px) {
-
-  .navigation-menu {
+.navigation-menu {
+  display: none;
+}
+.contact-info {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
     display: none;
+  }
+  .position-menu-head {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+  }
+  .navigation-menu {
+    display: flex;
+  }
+  .menu-header {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
   }
   .contact-info {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
 }
-
-/* hero */
+/*------------------------- hero -----------------------------------*/
 
 .hero {
   background-color: rgba(46, 47, 66, 0.7);
@@ -101,53 +133,7 @@
 
 .hero-title {
   display: flex;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .mobile-menu {
   position: fixed;
@@ -177,7 +163,7 @@
 }
 
 .mb-mn-item {
-padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 .mb-mn-link {
   font-weight: 700;
@@ -185,7 +171,7 @@ padding-bottom: 40px;
 }
 
 .ct-info-menu {
-padding-top: 284px;
+  padding-top: 284px;
 }
 
 .ct-item-menu {
@@ -215,34 +201,4 @@ padding-top: 284px;
   align-items: center;
   border-radius: 50%;
   transition-duration: 250ms;
-  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
